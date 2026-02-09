@@ -45,7 +45,7 @@ ggparcoord(
     
     title = "Parallel Coordinates: Sales, Profit, Discount by Segment",
     
-    subtitle = "MUHIL K B | Roll No: 23BAD070"
+    subtitle = "PRITHIVI RAJ P S S | Roll No: 23BAD088"
     
   ) +
   
@@ -61,7 +61,7 @@ ggplot(df, aes(x = Sales, y = Profit, size = Discount, color = Region)) +
     
     title = "Bubble Chart: Sales vs Profit",
     
-    subtitle = "MUHIL K B | Roll No: 23BAD070",
+    subtitle = "PRITHIVI RAJ P S S | Roll No: 23BAD088",
     
     x = "Sales",
     
@@ -83,7 +83,7 @@ ggplot(df, aes(x = Sales, y = Profit, color = Customer_Segment)) +
     
     title = "Trellis Display: Performance by Region",
     
-    subtitle = "MUHIL K B | Roll No: 23BAD070",
+    subtitle = "PRITHIVI RAJ P S S | Roll No: 23BAD088",
     
     x = "Sales",
     
@@ -92,4 +92,5 @@ ggplot(df, aes(x = Sales, y = Profit, color = Customer_Segment)) +
   ) +
   
   theme_bw()
+
 
