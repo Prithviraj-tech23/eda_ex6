@@ -1,44 +1,134 @@
-Experiment 6: Implementation of Multivariate Displays
-Introduction Multivariate data visualization plays a crucial role in AI analytics by enabling the analysis of relationships among multiple variables simultaneously. Unlike simple two-dimensional plots, multivariate displays help uncover complex patterns, correlations, and trends that are not easily observable otherwise.
-This experiment focuses on implementing key multivariate visualization techniques using R to analyze retail business data.
-Objective
-To understand the importance of multivariate displays in data analysis
-To visualize relationships among Sales, Profit, Discount, Region, and Customer Segment
-To interpret insights from different visualization techniques
- 
-Tools Used
-R Programming
-RStudio
-ggplot2
-GGally
-dplyr
- 
-Dataset Overview The dataset contains retail transaction information with the following variables:
-Order_ID – Unique order identifier
-Region – Geographic region of sales
-Product_Category – Category of the product
-Sales – Sales amount
-Profit – Profit earned
-Discount – Discount applied
-Customer_Segment – Type of customer
-Visualization Techniques Implemented
-Parallel Coordinates Plot This plot was used to visualize multiple numerical variables together. Each data record is represented as a line crossing parallel axes. It helps in identifying inverse relationships, trends, and outliers across customer segments.
-Bubble Chart (Sales vs Profit) A bubble chart was used to represent Sales and Profit, with bubble size indicating Discount and color representing Region. This visualization helps in understanding how discount levels impact profitability across regions.
-Trellis Display (Faceted Scatter Plots) Trellis displays were created by faceting Sales vs Profit plots based on Region. This method simplifies complex data by breaking it into smaller, comparable subsets, making regional performance patterns easier to observe.
-Observations and Insights
-Higher discount levels generally showed a negative impact on profit
-Sales and Profit relationships varied significantly across regions
-Customer segments behaved differently under similar sales conditions
-Faceting helped isolate and compare regional trends effectively
-Limitations
-Overlapping points in dense regions reduce clarity
-Bubble size comparison is visually less precise
-Interpreting multiple variables simultaneously requires higher cognitive effort
-Conclusion Multivariate displays provide powerful insights into complex datasets by allowing simultaneous analysis of multiple variables. The techniques implemented in this experiment are highly useful in exploratory data analysis, AI model evaluation, and decision-making processes.
-Repository Contents
-R source code
-Retail business dataset
-Output visualizations
-README.md
- 
- 
+Perfect 👍
+Here’s the **README.md** rewritten **specifically for *Prithivi Raj P S S (23BAD088)*** and **only for this retail visualization process**. It’s clean, academic, and GitHub-ready.
+
+---
+
+# 🛍️ Retail Business Data Visualization Using R
+
+This project focuses on **visual analysis of retail business data** using **R**. Advanced visualization techniques are applied to explore relationships among **sales**, **profit**, **discounts**, **regions**, and **customer segments**.
+
+---
+
+## 📌 Project Information
+
+* **Student Name:** Prithivi Raj P S S
+* **Roll No:** 23BAD088
+* **Language:** R
+* **Libraries Used:** `ggplot2`, `GGally`, `dplyr`
+
+---
+
+## 📂 Dataset Description
+
+The dataset (`retail_business.csv`) contains transactional retail data with the following fields:
+
+| Column           | Description              |
+| ---------------- | ------------------------ |
+| Order_ID         | Unique order identifier  |
+| Region           | Sales region             |
+| Product_Category | Category of the product  |
+| Sales            | Total sales amount       |
+| Profit           | Profit earned            |
+| Discount         | Discount applied         |
+| Customer_Segment | Type of customer segment |
+
+After loading the dataset, column names are standardized for clarity.
+
+---
+
+## ⚙️ Data Preparation
+
+* Dataset imported using `read.csv()`
+* Column names renamed for readability
+* Numerical variables preserved for visualization analysis
+
+---
+
+## 📊 Visualizations Implemented
+
+### 1️⃣ Parallel Coordinates Plot
+
+* Displays **Sales**, **Profit**, and **Discount**
+* Grouped by **Customer Segment**
+* Uses **min–max normalization** for consistent comparison
+
+**Purpose:**
+To analyze and compare multiple financial metrics across different customer segments.
+
+---
+
+### 2️⃣ Bubble Chart (Sales vs Profit)
+
+* X-axis: Sales
+* Y-axis: Profit
+* Bubble Size: Discount
+* Color: Region
+
+**Purpose:**
+To observe how discounts and regional differences influence profitability.
+
+---
+
+### 3️⃣ Trellis Display (Faceted Scatter Plot)
+
+* Scatter plot of Sales vs Profit
+* Faceted by **Region**
+* Colored by **Customer Segment**
+* Includes linear regression trend lines
+
+**Purpose:**
+To compare sales–profit relationships across regions and customer segments.
+
+---
+
+## 🛠 Required Libraries
+
+Install the required R packages before execution:
+
+```r
+install.packages("ggplot2")
+install.packages("GGally")
+install.packages("dplyr")
+```
+
+---
+
+## ▶️ How to Run
+
+1. Clone this repository
+2. Place `retail_business.csv` in the working directory
+3. Open the R script in **RStudio**
+4. Run the script to generate all visualizations
+
+---
+
+## 📈 Output
+
+* Parallel coordinates plot for multivariate comparison
+* Bubble chart highlighting discounts and regional impact
+* Trellis display for region-wise performance analysis
+* Clean and minimal themes for readability
+
+---
+
+## 📌 Notes
+
+* Ensure numeric columns (`Sales`, `Profit`, `Discount`) are correctly formatted
+* Dataset column order must match the renaming step
+* Best viewed in RStudio or exported as image files
+
+---
+
+## 📜 License
+
+This project is intended strictly for **academic and educational purposes**.
+
+---
+
+If you want, I can:
+
+* Add **observations & conclusions** (very useful for lab records)
+* Convert this into **official experiment format**
+* Merge this with your other experiments into **one portfolio repo**
+
+Just tell me 👍
