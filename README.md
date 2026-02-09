@@ -1,5 +1,3 @@
-Perfect 👍
-Here’s the **README.md** rewritten **specifically for *Prithivi Raj P S S (23BAD088)*** and **only for this retail visualization process**. It’s clean, academic, and GitHub-ready.
 
 ---
 
@@ -119,16 +117,6 @@ install.packages("dplyr")
 
 ---
 
-## 📜 License
 
-This project is intended strictly for **academic and educational purposes**.
-
----
-
-If you want, I can:
-
-* Add **observations & conclusions** (very useful for lab records)
-* Convert this into **official experiment format**
-* Merge this with your other experiments into **one portfolio repo**
 
 Just tell me 👍
